@@ -1,15 +1,23 @@
+#my-nav {
+    padding: 1.3%;
+    background: rgba(0,0,0,0.75);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 2px;
+} 
+
 
 .header-item {
-    animation: inflateAnimation 2s;
+    animation: inflateAnimation 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-    background-color: #333;
+    padding: 1% 5%;
+
     color: whitesmoke;
     margin: auto;
     text-decoration: none;
     transition: .3s;
-    border-radius: 5px;
     box-shadow: inset 0 0 2px black;
 }
 
@@ -21,26 +29,25 @@
 .struck {
     transition: .6s;
     /* outline: 1px black solid; */
-    background-color: #e73c7e;
+    background-color: #e73c7e !important;
     transform: scale(1.1);
 }
 
 .struck:hover {
     transition: .6s;
-    opacity: 50%;
-    /* background-color: #333; */
-    /* transform: scale(0) rotate(-360deg); */
+    color: #e73c7e;
 }
 
 
 @keyframes inflateAnimation {
     0% {
-        padding: 0% 1%;
+        background-color: #e73c7e;
     }
     50% {
-        padding: 1% 2%;
-     }
-     100% {
-        padding: 1% 5%;
-     }
+        background-color: #333;
+    }
+
+    100% {
+        background-color: #ee7752;
+    }
 }

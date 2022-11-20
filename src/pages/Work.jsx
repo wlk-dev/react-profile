@@ -22,7 +22,7 @@ export default function Work() {
     const tiles = createTiles(3 * 3)
 
     return (
-        <div id="tile-container">
+        <div id='tile-container'>
             <div id="tiles">
                 {tiles}
             </div>
