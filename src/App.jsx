@@ -1,5 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react'
+// import { Router as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom'
+
+import { React, useState } from 'react'
 import './index.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -11,15 +13,15 @@ function App() {
     const [count, setCount] = useState(0)
 
     return (
-        <Router>
+        <HashRouter hashType="hashbang">
             <Header />
-            <Routes >
+            <Routes>
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/work' element={<Work />} />
             </Routes>
             <Footer />
-        </Router>
+        </HashRouter>
     )
 }
 

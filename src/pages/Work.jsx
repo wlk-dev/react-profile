@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
+
 
 export default function Work() {
     const works = useRef(null)
@@ -53,7 +55,7 @@ export default function Work() {
 
     const createTiles = total => {
         return Array.from(projs).map((proj, index) => {
-            return (<a href={proj.href} target="_blank" key={index + 1} className="tile" idx={index}>{proj.name}</a>)
+            return (<Link to={proj.href} target="_blank" key={index + 1} className="tile" idx={index}>{proj.name}</Link>)
         })
     }
 

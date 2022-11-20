@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../assets/Navigation.css"
 
 export default function Navigation(props) {
@@ -11,9 +12,9 @@ export default function Navigation(props) {
     return (
         <header>
             <nav style={{display : "flex"}} >
-                <a className={about} href="/about" >About</a>
-                <a className={work} href="/work" >Work</a>
-                <a className={contact} href="/contact" >Contact</a>
+                <Link className={about} to="/about" >About</Link>
+                <Link className={work} to="/work" >Work</Link>
+                <Link className={contact} to="/contact" >Contact</Link>
             </nav>
         </header>
     )
