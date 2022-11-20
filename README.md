@@ -14,7 +14,7 @@ A portfolio website using react.js.
 ## Installation
 `N/A`
 ## Usage
-Visit the deployed webpage.
+Visit the [deployed webpage.](https://wlk-dev.github.io/react-profile/)
 ## License
 This project is covered under the [MIT](https://opensource.org/licenses/MIT) license.
 ## Contribution Guidelines
