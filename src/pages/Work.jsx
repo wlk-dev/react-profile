@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
 export default function Work() {
-    const botPageRef = useRef(null)
+    const works = useRef(null)
 
     useEffect(() => {
         scrollToBottom()
@@ -9,7 +9,7 @@ export default function Work() {
 
 
     const scrollToBottom = () => {
-        botPageRef.current?.scrollIntoView({ behavior: "smooth" })
+        works.current?.scrollIntoView({ behavior: "smooth" })
     }
 
 
@@ -23,10 +23,9 @@ export default function Work() {
 
     return (
         <div id='tile-container'>
-            <div id="tiles">
+            <div id="tiles" ref={works}>
                 {tiles}
             </div>
-            <div ref={botPageRef} />
         </div>
     )
 }

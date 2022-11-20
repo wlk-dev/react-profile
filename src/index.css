@@ -66,6 +66,48 @@ body {
     width: 60vw;
 }
 
+
+div.card-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.contact-card {
+    padding-right: 2.5%;
+}
+
+div.contact-card a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    transition: 0.6s;
+}
+
+div.contact-card a i {
+    margin-bottom: 15%;
+    color: black;
+    transition: 0.6s;
+}
+
+div.contact-card a:hover, div.contact-card a i:hover {
+    text-decoration: none;
+    color:whitesmoke;
+    transition: 0.6s;
+}
+
+/* #profile-pic {
+    transition: .3s;
+    max-width: 25vw;
+}
+
+
+#profile-pic:hover {
+    transition: .3s;
+    transform: translateY(-2px);
+} */
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
