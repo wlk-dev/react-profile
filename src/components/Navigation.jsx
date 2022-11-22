@@ -12,9 +12,9 @@ export default function Navigation(props) {
     return (
         <header>
             <nav style={{display : "flex"}} >
-                <Link className={about} to="/about" onClick={ e => setLoc("about") }>About</Link>
-                <Link className={work} to="/work" onClick={e => setLoc("work")}>Work</Link>
-                <Link className={contact} to="/contact" onClick={e => setLoc("contact")}>Contact</Link>
+                <Link className={about} to="/about" onClick={ () => setLoc("about") }>About</Link>
+                <Link className={work} to="/work" onClick={() => setLoc("work")}>Work</Link>
+                <Link className={contact} to="/contact" onClick={() => setLoc("contact")}>Contact</Link>
             </nav>
         </header>
     )
