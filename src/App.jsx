@@ -8,18 +8,19 @@ import Footer from './components/Footer'
 import About from "./pages/About"
 import Work from "./pages/Work"
 import Contact from "./pages/Contact"
+import Resume from "./pages/Resume"
 
 function App() {
-    const [count, setCount] = useState(0)
-
     return (
         <HashRouter hashType="hashbang">
-            <h1>William .K</h1>
+            <h1 style={{alignText : "center"}}>William K.</h1>
             <Header />
             <Routes>
+                <Route path='/' element={<About />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/work' element={<Work />} />
+                <Route path='/resume' element={<Resume />} />
             </Routes>
             <Footer />
         </HashRouter>

@@ -12,7 +12,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cyntler/react-doc-viewer": "^1.10.1",
     "react": "^18.2.0",
+    "react-doc-viewer": "^0.1.5",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3"
   },
