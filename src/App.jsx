@@ -13,7 +13,6 @@ import Resume from "./pages/Resume"
 function App() {
     return (
         <HashRouter hashType="hashbang">
-            <h1 style={{alignText : "center"}}>William K.</h1>
             <Header />
             <Routes>
                 <Route path='/' element={<About />} />

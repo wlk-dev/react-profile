@@ -17,8 +17,11 @@ export default function Header() {
     }
 
     return (
-        <div id='my-nav'>
-            <Navigation />
-        </div>
+        <>
+            <div id='my-nav'>
+                <h1 style={{textAlign : "center", color : "whitesmoke"}}>William K.</h1>
+                <Navigation />
+            </div>
+        </>
     )
 }
